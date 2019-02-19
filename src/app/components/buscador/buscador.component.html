@@ -1,0 +1,27 @@
+<h3 class="animated fadeIn fast" style="font-family: 'Nunito', sans-serif;font-weight: bold; font-size: 33px">Resultado de la búsqueda</h3>
+<hr>
+<br>
+<br>
+<div class="row animated fadeIn fast" *ngIf="conjuntoFamilias.length == 0">
+    <div class="col-md-12">
+        <div class="alert alert-info" role="alert">
+            No existe la familia: {{termino}}
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="card" *ngFor="let conjuntoFamilias of conjuntoFamilias; let i = index">
+        <img class="card-img-top" src="./assets/img/product_12.png" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{conjuntoFamilias.nombre}}</h5>
+            <p class="card-text">{{conjuntoFamilias.descripcion}}</p>
+            <br>
+            <button (click)="verFamiliaAnalitica()" type="button " class="btn btn-primary "> Ver familia</button>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<button (click)="verFamilias() " style="margin-right: 30px; " class="btn btn-primary btn-small "> REGRESAR </button>
+<br>

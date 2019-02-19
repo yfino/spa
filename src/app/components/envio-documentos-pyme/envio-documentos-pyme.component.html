@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+</head>
+<br>
+
+<body>
+    <input type="checkbox" id="cerrar">
+    <label for="cerrar" id="btn-cerrar"> X </label>
+    <div class="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-body" role="document">
+            <div class="contenido" style="overflow: auto">
+                <h5 style="font-weight: bold; text-align: center; font-size: 20px; margin-top: 20px;font-family: 'Nunito', sans-serif">Términos y Condiciones</h5>
+                <br>
+                <p style="overflow:auto; margin-left: 30px; text-align: justify; margin-right: 30px; color:gray">
+                    Recuerda que por disposiciones constitucionales y de ley, toda tu información financiera es confidencial y está sujeta a reserva bancaria. En tal sentido, reconoces que sólo podrás suministrarnos tu propia información financiera y que nos autorizas a
+                    utilizarla para prestarte nuestros servicios según los términos y condiciones que aceptaste en el portal de APIs Bancolombia y las condiciones particulares de la familia de APIs de agregación.
+                    <br> Adicionalmente, recuerda que tus datos personales son tratados conforme a las autorizaciones otorgadas mediante los formatos de vinculación suscritos con el Grupo Bancolombia, lo anterior en cumplimiento con la ley 1266 de 2008,
+                    ley 1581 de 2012, decreto 1377 de 2013 y demás normas que las adicionen o complementen. <br> Ten presente que frente a Bancolombia tienes los siguientes Derechos: puedes conocer, actualizar y rectificar los datos personales que has
+                    dado, solicitarnos prueba de esta autorización e información sobre el uso que le hemos dado a los datos personales, puedes negarte y/o revocar la autorización en los casos que sea procedente de acuerdo con la ley y presentar quejas
+                    ante la SIC por el uso indebido de tus datos personales. Para conocer la Política para la administración de datos personales, ingresa al sitio web: <br><br>
+                    <a href="https://www.grupobancolombia.com/wps/portal/empresas/documentos-legales/proteccion-datos/bancolombia-sa" target="_blank">https://www.grupobancolombia.com/wps/portal/empresas/documentos-legales/proteccion-datos/bancolombia-sa </a>
+                    <br>
+                </p>
+                <hr>
+                <span>
+                <input type="checkbox">
+                <label for="aceptar"></label>Acepto
+                <input type="checkbox" style="margin-left: 10px;">
+                <label for="aceptar"></label>No acepto
+                <br>
+                 </span>
+                <br>
+            </div>
+        </div>
+    </div>
+</body>
+
+<body>
+    <header>
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading" style="font-weight: bold">¡Bien hecho!</h4>
+            <p>Sus documentos fueron cargados correctamente.</p>
+            <p>Acepta los términos y condiciones para continuar</p>
+
+            <hr>
+            <p class="mb-0"> Presiona Enviar para finalizar.</p>
+        </div>
+    </header>
+</body>
+<br><br>
+<span>
+    <button (click)="verCargaDocumentosPyme()" style="margin-right: 30px;" class="btn btn-primary btn-small"> REGRESAR </button>
+    <button (click)="verDetalleExtracto()" class="btn btn-primary btn-small"> ENVIAR </button>
+</span>
+
+</html>

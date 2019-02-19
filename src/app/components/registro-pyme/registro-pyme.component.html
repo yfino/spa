@@ -1,0 +1,28 @@
+<h3 class="animated fadeIn fast text-center">Registro de Pyme</h3>
+<form class="form-pyme">
+    <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Nombre Pyme</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Nombre Pyme">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Contraseña</label>
+        <div class="col-sm-10">
+            <input type="password" data-minlength="8" class="form-control" id="inputPassword" placeholder="Contraseña" required>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Repita contraseña: </label>
+        <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPasswordConfirm " data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="confirme contraseña">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Nombre Aplicación</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputPassword3" placeholder="aplicacion">
+        </div>
+    </div>
+    <button (click)="verCargaDocumentosPyme()" type="button " class="btn btn-primary"> Ingresar</button>
+</form>

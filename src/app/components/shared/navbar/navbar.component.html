@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="nav-brand" href="#">
+        <img class="imgIcon" src="assets/img/icon_banco.png" width="220" height="50" alt="">
+    </a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <!--active -->
+
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['home']"> Inicio </a>
+            </li>
+
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['familias']"> Familias de APIS</a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['contactanos']"> Contáctanos</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Buscar familia" (keyup.enter)="buscarFamilia(buscarTexto.value)" #buscarTexto>
+            <button (click)="buscarFamilia(buscarTexto.value)" type="button" class="btn ">Buscar</button>
+        </form>
+    </div>
+</nav>

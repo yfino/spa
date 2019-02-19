@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<h3 class="animated fadeIn fast" style="font-family: 'Nunito', sans-serif;font-weight: bold; font-size: 33px">Carga de extractos bancarios</h3>
+
+<h6 class="animated fadeIn fast"> A continuación carga tus extractos bancarios, seleccionando el banco y el tipo de producto.</h6>
+<br>
+<table class="table table-responsive-sm table-bordered " style="border-color: #00448d">
+    <thead>
+        <tr>
+            <th scope="col" style=" background-color: #00448d;border-color: #00448d; color:white">Extracto bancario</th>
+            <th scope="col" style=" background-color: #00448d;border-color: #00448d; color:white">¿A que banco pertenece? </th>
+            <th scope="col" style=" background-color: #00448d;border-color: #00448d; color:white">¿ Cuál es el tipo de producto? </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <!--- FILAAAAAAAAA #1-->
+            <th scope="row">
+                <form>
+                    <div class="form-group" style="padding-top: 5px;">
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                </form>
+            </th>
+            <td>
+                <div class="input-group mb-3" style="padding-top: 4px;">
+                    <select class="custom-select" id="inputGroupSelect02">
+                      <option selected>Elije banco...</option>
+                      <option value="1">BANCOLOMBIA</option>
+                      <option value="2">BANCO DE BOGOTA</option>
+                      <option value="3">BANCO POPULAR</option>
+                      <option value="4">BANCO CAJA SOCIAL</option>
+                      <option value="5">BANCO DE OCCIDENTE</option>
+                      <option value="6">DAVIVIENDA</option>
+                      <option value="7">BANCO AV VILLAS</option>
+                      <option value="8">BANCO BBVA</option>
+                      <option value="9">COLPATRIA</option>
+                      <option value="10">BANCO DE BOGOTA</option>
+                      <option value="11">BANCO AGRARIO DE COLOMBIA</option>
+                </select>
+                </div>
+            </td>
+            <td>
+                <div class="input-group mb-3" style="padding-top: 4px;">
+                    <select class="custom-select" id="inputGroupSelect02">
+                        <option selected> Elije tipo de producto..</option>
+                        <option value="1">Cuenta de Ahorros</option>
+                        <option value="2">Cuenta Corriente</option>
+                        <option value="3">CDT</option>
+                        <option value="4">Tarjeta de Crédito</option>
+                     </select>
+                </div>
+            </td>
+        </tr>
+
+    </tbody>
+</table>
+<br>
+<br>
+<div id="table-extractos">
+    <table class="table table-hover table-sm" style="text-align: left; font-size: small; width: 400px; list-style-type:upper-latin; ">
+        <thead>
+            <p style="font-size: large">Tus extractos: </p>
+        </thead>
+        <tbody>
+            <tr>
+                <th>
+                    <ol class="fa-ul">
+                        <li><span class="fa-li"><i class="fa fa-trash-alt "></i> </span> Cuenta de Ahorros BANCOLOMBIA.PDF</li>
+                    </ol>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <ol class="fa-ul">
+                        <li><span class="fa-li"><i class="fa fa-trash-alt"></i></span>Cuenta de Ahorros BBVA.PDF</li>
+                    </ol>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <ol class="fa-ul">
+                        <li><span class="fa-li"><i class="fa fa-trash-alt"></i></span>Cuenta de ahorros Banco de Bogotá.PDF</li>
+                    </ol>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <ol class="fa-ul">
+                        <li><span class="fa-li"><i class="fa fa-trash-alt"></i></span>Tarjeta de Crédito VISA Bancolombia.PDF</li>
+                    </ol>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <ol class="fa-ul">
+                        <li><span class="fa-li"><i class="fa fa-trash-alt"></i></span>Tarjeta de Crédito CitiBank.PDF</li>
+                    </ol>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!--BOTÓN-->
+<span>
+    
+<button (click)="verFamiliaAgregacion()" class="btn btn-primary btn-small" style="margin-right: 30px">REGRESAR </button>
+<!--<button (click) = "verExtracto('listaExtracto')" class="btn btn-primary btn-small" >CARGAR </button>-->
+<button (click)="verEnvioDocumentosPyme()" class="btn btn-primary btn-small" style="margin-right: 30px">CARGAR </button>
+</span>
