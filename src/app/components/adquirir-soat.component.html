@@ -1,0 +1,166 @@
+<div class="sub-logo-component">
+    <div>
+        <figure class="mt-0 mb-1"><img alt="" src="https://s3-us-west-2.amazonaws.com/pruebasuraenelina/logo-seguros.svg"></figure>
+    </div>
+</div><br>
+<div class="alert alert-info" style="font-family: 'Nunito', sans-serif" role="alert">
+    <strong>¡ Aún no tienes SOAT !</strong><br> Llena la información mostrada a continuación, y obtén tu póliza de Seguro SOAT
+</div><br><br>
+<div class="row">
+    <div class="col-sm-4">
+        <div class="form-group">
+            <h5 class="card-title" style="color: #00448d; font-weight: bold"> <img src="/assets/img/datos.png" class="center-block"> Datos del propietario</h5>
+            <hr>
+            <div class="card card-body" STYLE="text-align: left; font-family: 'Nunito', sans-serif ">
+                <div>
+                    <select for="text" class=" form-control">
+                        <option>Tipo de identificación</option>
+                        <option>Cédula de ciudadanía</option>
+                        <option>Cédula de extranjería</option>
+                        <option>Tarjeta de identidad</option>
+                        <option>Diplomatico</option>
+                        <option>NIT</option>
+                        <option>Pasaporte</option>
+                    </select> <br>
+                </div>
+                <div>
+                    <input for="text" class=" form-control" name="identificacion" placeholder="Número de identificación" NgModel>
+                </div><br>
+                <div>
+                    <input for="text" class=" form-control" placeholder="Nombres">
+                </div><br>
+                <div>
+                    <input for="text" class=" form-control" placeholder="Apellidos">
+                </div><br>
+                <div>
+                    <input for="text" class=" form-control" placeholder="Ciudad">
+                </div><br>
+                <div>
+                    <input for="text" class=" form-control" placeholder="Dirección">
+                </div><br>
+                <div>
+                    <input for="text" class=" form-control" placeholder="Celular">
+                </div><br>
+                <div>
+                    <input for="text" class=" form-control" placeholder="Correo electrónico">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--- datos del vehiculo para adquirir soat-->
+    <div class="col-sm-4">
+        <div>
+            <h5 class="card-title" style="color: #00448d; font-weight: bold"><img src="/assets/img/car.PNG" class="center-block">Datos del vehículo</h5>
+
+            <hr>
+            <div class="card card-body" STYLE="text-align: left; font-family: 'Nunito', sans-serif ">
+                <div>
+                    <input for="text" class=" form-control" placeholder="Tipo de Servicio">
+                </div><br>
+                <div>
+                    <input for="text" class=" form-control" placeholder="Cilindraje">
+                </div><br>
+                <div>
+                    <input for="text" class=" form-control" placeholder="Marca">
+                </div><br>
+                <div>
+                    <input for="text" class=" form-control" placeholder="Modelo">
+                </div><br>
+                <div>
+                    <input for="text" class=" form-control" placeholder="Color">
+                </div><br>
+                <div>
+                    <input for="text" class=" form-control" placeholder="Linea">
+                </div><br>
+                <div>
+                    <input for="text" class=" form-control" placeholder="Tipo de combustible">
+                </div><br>
+                <div>
+                    <input for="text" class=" form-control" placeholder="N° de pasajeros">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div>
+            <h5 class="card-title" style="color: #00448d; font-weight: bold"><img src="/assets/img/pay.png" class="center-block">Información de Pago </h5>
+            <hr>
+            <div class="card card-body" STYLE="text-align: left; font-family: 'Nunito', sans-serif ">
+                <h6 class="card-subtitle mb-2 text-muted" style="font-weight: bold">Aqui podrás realizar el pago de tu SOAT</h6>
+                <div>
+                    <label for="text" class=" col-form-label"><strong>ID de Pago:</strong> 144000 </label><br>
+                </div>
+                <div>
+                    <label for="text" class=" col-form-label"><strong>Fecha límite:</strong> 15/04/2019 </label>
+                </div>
+                <div>
+                    <label for="text" class=" col-form-label"><strong>Valor a pagar:</strong> $ </label>
+                </div><br>
+                <input type="checkbox"><u> 
+                        <a style="cursor:pointer; font-size: 15px;" data-toggle="modal" data-target="#exampleModalLong"><u>Autorizo el uso responsable de mi información y acepto términos y condiciones</u></a>
+                </u>
+            </div>
+            <label style="font-family: 'Nunito', sans-serif">¿Quieres programar la compra?</label> Si <input type="radio" name="programar" onclick="document.getElementById('programartexto').style.display='block';"> No <input name="programar" type="radio">
+            <div>
+                <input type="date" id="programartexto" style="display: none" class="form-control" placeholder="Programar compra" name="programar-compra">
+            </div><br>
+        </div><br>
+
+        <span>
+            <button type="button" class="btn col-sm-8" style="background-color: #00aec7; color: white; font-weight: bold; width: 150px;">comprar</button>
+          </span>
+
+    </div>
+</div><br>
+<span>
+        <button (click)="verSoat()" type="button" class="btn btn-primary" ><i class="fas fa-angle-left" style=" float:left; color:#454648;width: 10px;
+            height: 16px;padding-top: 2px"></i>regresar</button>
+      </span>
+
+<!--MODAL -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document" style="text-align: justify">
+        <div class="modal-content" style="text-align: justify">
+            <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLongTitle" style="font-family: 'Nunito', sans-serif;font-weight: bold; text-align: center">Términos y Condiciones</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body pt-5 pt-md-3">
+                <div>
+                    <p><strong>Términos y condiciones de la renovación automática del SOAT</strong></p>
+                    <ul>
+                        <li>La renovación automática del SOAT aplica si pagas con tarjeta de crédito y cumples las condiciones y los términos establecidos por la Compañía para el servicio.</li>
+                        <li>Al aceptar la suscripción, autorizas a SURA a guardar el medio de pago con el fin de que cada año se haga el débito automático del valor del SOAT para el vehículo registrado.&#8203;&#8203;&#8203;</li>
+                        <li>Días antes de que se te venza el SOAT, y si estás suscrito a la renovación automática,&nbsp;<strong>cargaremos al medio de pago registrado en SURA el costo de la póliza.</strong>&nbsp;Si te llegan a sancionar porque lo tienes vencido,
+                            pagaremos la multa.</li>
+                        <li>El valor del SOAT varía anualmente de acuerdo con el incremento del salario mínimo mensual legal vigente o en cualquier momento por disposición del Gobierno nacional.&nbsp;<strong>Al realizar el débito antes del vencimiento de tu SOAT, no pierdes días de vigencia.</strong></li>
+                        <li>Al realizar la suscripción a la renovación automática del SOAT, SURA establece compromisos con el cliente y el cliente, a su vez, con SURA.&nbsp;<strong>La Compañía no pagará la multa que pueda generarte no tener el SOAT vigente si no cumples los siguientes requerimientos:</strong></li>
+                        <li>Si después de varios intentos no se puede realizar la compra automática del SOAT con el medio de pago inscrito, SURA no hará la renovación y, por ende, no cumplirá su promesa de responder económicamente por una multa si llegas
+                            a recibirla. Tu medio de pago debe tener el cupo necesario para hacer la compra del SOAT.</li>
+                        <li>Es tu responsabilidad gestionar con la Compañía la modificación del medio de pago o la desuscripción en cualquier momento del servicio de renovación automática. Para ello, comunícate desde tu celular a nuestra línea de atención
+                            #888, al 437 88 88 si estás en Medellín, Bogotá o Cali; o al 01 8000 51 8888 en el resto del país.&#8203;</li>
+                        <li><strong>El SOAT se expedirá al vehículo registrado en el servicio de renovación automática con los datos del RUNT.</strong>&nbsp;Si hay inconsistencias en la información del vehículo y necesitas hacer modificaciones, debes hacer
+                            la solicitud de actualización de datos al correo &#8203;<a href="mailto:polizasoat@suramericana.com.co">polizasoat@suramericana.com.co</a>&nbsp; adjuntando la licencia de tránsito. &#8203;</li>
+                        <li><strong>Si vendes tu vehículo debes desuscribirte&nbsp;d&#8203;el servicio de renovación automática.</strong>&nbsp;En caso de que hayas cambiado tu vehículo y desees tomar el servicio de renovación automática, SURA estudiará la
+                            suscripción y te confirmará si el nuevo vehículo aplica para la renovación. Si la suscripción al débito automático con el nuevo vehículo no fue aceptada, SURA no asumirá el pago de ninguna multa que recibas por tener el SOAT
+                            vencido.&#8203;
+                        </li>
+                        <li>Si tu nuevo vehículo no tenía el SOAT con SURA al momento de adquirirlo, no podrás acceder al servicio de renovación automática hasta que compres tu SOAT para la vigencia siguiente.&#8203;</li>
+                        <li><strong>El SOAT se te enviará al correo electrónico suscrito y te llegará&nbsp;también un mensaje de texto de confirmación al celular registrado una vez se realice la renovación.</strong>&nbsp;Si necesitas hacer cambios en la información
+                            del tomador, comunícate a alguna de nuestras líneas de atención.<strong>&nbsp;</strong>Si no recibiste el SOAT porque tu información está desactualizada, SURA no asumirá las multas que esto te pueda ocasionar.&#8203;</li>
+                        <li>El SOAT es irrevocable de acuerdo con el Decreto 056 de 2015 artículo 41 numeral 5, por ello, mientras estés inscrito al servicio de renovación automática, no puedes comprarlo con otra aseguradora.</li>
+                        <li><strong>SURA podrá cancelar tu suscripción si no cumples con las políticas de la Compañía.&nbsp;</strong>En caso de que esto ocurra, te informaremos con tiempo para que puedas gestionar la compra de tu SOAT.​​​​​</li>
+                    </ul>
+                </div>
+
+                <span class="modal-footer col-sm-8">
+                        <button type="button" class="btn btn-secondary btn-small" data-dismiss="modal">cerrar</button>
+                 </span>
+            </div>
+        </div>
+    </div>
+</div>
